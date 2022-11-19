@@ -6,14 +6,16 @@ import {
   ManyToOne,
   PrimaryGeneratedColumn
 } from 'typeorm';
-import { v4 as uuid } from 'uuid';
 
+import { v4 as uuid } from 'uuid';
 import { User } from '../../users/entities/User';
 
 enum OperationType {
   DEPOSIT = 'deposit',
   WITHDRAW = 'withdraw',
 }
+
+export { OperationType }
 
 @Entity('statements')
 export class Statement {

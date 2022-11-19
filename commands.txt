@@ -1,0 +1,16 @@
+Important commands for perfect functioning of the application
+
+1. Docker:
+
+1.1. Get Start: docker run --name fin_api -e POSTGRES_DB=postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+
+1.1. (Other Option): docker-compose up -d
+
+1.2. Stop & Delete: docker-compose down -v
+
+
+
+
+2. TypeORM:
+
+2.1. Get Start: yarn run typeorm migration:run
